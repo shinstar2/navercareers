@@ -1,0 +1,67 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    margin: -1px;
+}
+
+
+.inner{
+    max-width: 1408px;
+    margin: 0 auto;
+    padding: 0 104px;
+
+}
+
+
+
+.sc-content .btn-box .btn,
+.sc-search .input-wrap .keyword-label::before,
+.header .logo a::after,
+.right-gnb .curr::after,
+.sc-content .next::before,
+.sc-content .prev::before,
+.sc-search .icon-box::after,
+.sc-team .group-content .title .num::after,
+.sc-support .link-support::after,
+.footer .relate::after,
+.footer .relate-item .site::after,
+.footer .group-related .relate::after{
+    background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_pc.png);
+    background-size: 328px 205px;
+}
+
+
+/* 미디어쿼리 */
+
+@media (max-width:1230px) {
+    .header .side-nav .teams::after,
+    .header .logo a::after,
+    .header .btn-menu{
+        background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+        background-size: 195px 181px;
+    }
+}
+/* 1024~768 */
+@media (max-width:1024px) {
+    .inner{
+        padding: 0 50px;
+
+    }
+
+}
+/* 767~[320] */
+@media (max-width:767px) {
+    .inner{
+        padding: 0 22px;
+
+    }
+
+    .footer .group-related .relate::after{
+        background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+        background-size: 195px 181px;
+    }
+   
+
+}

@@ -1,0 +1,557 @@
+.container{}
+
+
+.sc-visual{}
+.sc-visual .swiper{
+    height: 544px;
+}
+
+
+.sc-visual .img-area{height: 100%;}
+.sc-visual .img-area video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sc-visual .title{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    padding: 20px;
+}
+.sc-visual .title br{display: none;}
+.sc-visual .title span{
+    display: block;
+    font-size: 100px;
+    line-height: 1.2;
+    letter-spacing: -2.4px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.16);
+    width: 0%;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 1s 0.3s, opacity 1s 0.3s;
+}
+.sc-visual .swiper-slide-active .title span{
+    width: 100%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.sc-search{
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.sc-search .search-bd{
+    display: flex;
+    background: #fff;
+}
+.sc-search .search-bd .search-area{
+    display: flex;
+    flex-grow: 1;
+}
+.sc-search .search-bd .label{
+    font-size: 14px;
+    line-height: 54px;
+    color: #000;
+    font-weight: bold;
+}
+
+.sc-search .input-wrap{flex: 1;display: flex;}
+.sc-search .input-wrap .keyword-label{
+    position: relative;
+    padding-left: 67px;
+}
+.sc-search .input-wrap .keyword-label::before{
+    position: absolute;
+    left: 21px;top: 20px;
+    background-position: -245px -40px;
+    width: 18px;
+    height: 18px;
+    content: '';
+}
+.sc-search .input-wrap .input{
+    flex: 1;
+    padding: 0 25px 0 9px;
+}
+
+.sc-search .select-wrap{flex: 1;display: flex;}
+.sc-search .select-wrap .select{
+    flex: 1;
+    padding: 0 25px 0 9px;
+    font-size: 14px;
+    color: #d0d0d0;
+    
+    background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/recruit/ico_arrow_up.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px;
+    /* background: url(https://recruit.navercorp.com/share/tmplat/naver/img/recruit/ico_arrow_up.png) no-repeat right 10px center / 8px */
+}
+.sc-search .select-wrap .select > option{
+    color: #000;
+}
+.sc-search .select-wrap .select option:disabled{
+    display: none;
+}
+.sc-search .btn-submit{
+    width: 97px;
+    height: 54px;
+    line-height: 54px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+/* select */
+
+/* 메인한정 공통 */
+.section .group-title h2{ font-size: 64px; line-height: 71px; letter-spacing: -0.64px; margin-bottom: 20px;}
+.section .group-title .desc{ 
+    font-size: 22px;
+    display: inline-block;
+ }
+ .section .group-title .link-more{
+ position: relative;
+ top: -10px;
+ font-size: 14px;
+ margin-left: 20px;
+ text-decoration: underline;
+ }
+/* .section .group-title .link-more{font-size: 14px; 
+     text-decoration-line: underline; 
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+    } */
+
+
+/* practice */
+
+.sc-team{ background-color: #fafafa; padding: 126px 0 90px;}
+.sc-team .inner{}
+
+.sc-team .group-content{margin-top: 70px;}
+.sc-team .group-content ul{}
+.sc-team .group-content li{}
+.sc-team .group-content a{
+    display: block;
+}
+.sc-team .group-content a:hover{
+    background-color: #ebebeb;
+}
+.sc-team .group-content .inner{
+    display: flex;
+}
+.sc-team .group-content .title{flex: 1;
+    line-height: 60px;
+    padding: 20px 0;
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: -0.34px;
+}
+.sc-team .group-content .title .num{
+    position: relative;
+    line-height: 1;
+    font-size: 15px;
+    vertical-align: top;
+    margin: 13px 0 0 18px;
+}
+.sc-team .group-content .title .num::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: -1px;
+    right: -14px;
+    background-position: -176px -105px;
+    width: 9px;
+    height: 9px;
+}
+.sc-team .group-content .desc{flex: 1;
+    line-height: 60px;
+    padding: 20px 0 20px 15px;}
+
+
+
+
+
+
+
+
+
+/* sc-content */
+.sc-content{
+    padding: 95px 0 68px;
+    overflow: hidden;
+}
+.sc-content .swiper{
+    margin-top: 55px;
+    padding-bottom: 68px;}
+
+.sc-content .text-box{
+    position: relative;
+    overflow: hidden;
+    margin-top: 29px;
+}
+.sc-content .text-box .title{
+    display: inline-block;
+    line-height: 36px;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+   
+}
+.sc-content .text-box .etc{
+    position: relative;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.28px;
+    color: #000;
+
+}
+.sc-content .text-box .link-more{
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.sc-content .etc span+span{margin-left: 12px;}
+.sc-content .etc .part{position: relative;}
+.sc-content .etc .part::after{
+    content: '';
+    width: 1px;height: 13px;
+    background: #000;
+    display: inline-block;
+    position: absolute;
+    top: 2px;right: -8px;
+}
+
+
+
+
+/*공통 */
+
+.sc-content .btn-box{
+    display: flex;
+    position: absolute;
+    bottom: 0;right: 0;
+    gap: 10px;
+}
+.sc-content .btn-box .btn{
+    width: 33px;
+    height: 32px;
+    background-position: -187px -172px;
+}
+.sc-content .btn-box .btn.prev{}
+.sc-content .btn-box .btn.next{ transform: rotate(180deg); }
+.sc-content .btn-box .swiper-button-disabled{
+    opacity: 0.5;
+}
+
+  
+/* 개인1 */
+.sc-content .people-slide{
+    overflow:initial;
+}
+.sc-content .people-slide .img-box{
+    position: relative;
+    padding-bottom: calc((520/1097)*100%);
+}
+.sc-content .people-slide .img-box img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 개인2 */
+.sc-content .benefit-slide{}
+
+
+.sc-content .benefit-slide .img-box{
+    position: relative;
+    padding-bottom: 100%;
+}
+.sc-content .benefit-slide .img-box img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 베네핏s */
+
+.sc-content.benefits .title{}
+.sc-content.benefits .desc{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.36px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sc-support{
+    padding: 95px 0 102px;
+}
+.sc-support h2{
+    font-size: 25px;
+}
+.sc-support .link-support{
+    position: relative;
+    margin-top: 18px;
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+}
+.sc-support .link-support::after{
+    position: absolute;
+    top: 0px; left: 65px;
+    display: block;
+    width: 33px;height: 32px;
+    content: '';
+    margin-left:11px;
+    background-position: -76px -172px;
+}
+/*  */
+
+/* .sc-teams{
+    padding-bottom: 89px;
+    background-color: #ccc;
+    height: 800px;
+    color: #000;
+    font-weight: bold;
+}
+}
+.sc-teams .group-teams{
+    
+    width: 1200px;
+    height: 123px;
+    margin: 20px auto;
+    line-height: 71px;
+    letter-spacing: -0.64px;
+    font-weight: bold;
+    padding: 126px 104px 0;
+}
+.sc-teams .group-teams .text-box,
+.sc-practice .text-area{
+    position: relative;
+}
+.sc-teams .group-teams .link-more
+{
+    position: absolute;
+    bottom: 0;right: 55%;
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+.sc-teams .desc{}
+.sc-teams .link-more{}
+.sc-teams .group-inner{display: flex;}
+.sc-teams .group-inner ul{}
+.sc-teams .group-inner li:hover{
+    background: #fff;
+    display: block;
+}
+.sc-teams .group-inner ul li{}
+.sc-teams .group-inner li a{display: flex;}
+.sc-teams .group-inner li span{display: block}
+.sc-teams .group-inner li .title{width: 590px;display: block;}
+.sc-teams .group-inner li .desc{width: 590px;display: block;} */
+
+
+/* 미디어쿼리 */
+
+@media (max-width:1230px) {
+
+    header .side-nav.on{
+      
+    }
+    .sc-visual .title span{
+        font-size: 80px;
+    }
+    .sc-content.benefits .desc br{
+    display: none;      
+    }
+}
+/* 1024~768 */
+@media (max-width:1024px) {
+
+
+    .sc-search{
+        padding-top: 50px;
+        position: initial;
+        transform: translateY(0);
+        background-color: #fafafa;
+
+    }
+    .sc-visual .title span{
+        font-size: 60px;
+    }
+    .sc-search .search-bd{
+        flex-direction: column;
+    }
+    .sc-search .search-bd .label{
+        min-width: 80px;
+        padding-left: 10px;
+    }
+
+    .sc-search .input-wrap .keyword-label{
+        padding-left: 10px;
+    }
+    .sc-search .input-wrap .keyword-label::before{
+        display: none;
+    }
+    .sc-search .btn-submit{
+        width: 60px;
+    }
+        
+    .sc-search .btn-submit{
+        width: 100%;
+    }
+   
+}
+/* 767~[320] */
+@media (max-width:767px) {
+    .sc-visual .title span{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sc-visual .title br{
+        display: block;
+    }
+    .sc-visual .swiper{
+        height: auto;
+    }
+    .sc-visual .img-area{
+        position: relative;
+        padding-bottom: 62.4%;
+    }
+    .sc-visual .img-area video{
+        position: absolute;
+        top: 0;left: 0;
+    }
+    .sc-search .group-search{
+        display: none;
+    }
+
+
+  
+    /* 수정6.22 */
+    .sc-team .group-title h2,
+    .sc-content .group-title h2{
+        margin-bottom: 11px;
+        font-size: 36px;
+        line-height: 50px;
+        letter-spacing: -0.7px;
+    }
+    .sc-team .group-title .desc{
+        padding-right: 20px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+    }
+    .sc-team .group-content{}
+    .sc-team .group-content .inner{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 22px;
+    }
+    .sc-team .group-content .title{
+        font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.48px;
+    display: block;
+    padding: 0;
+    }
+    .sc-team .group-content .desc{
+        padding: 0;
+        margin-top:1px; 
+        line-height: 26px;
+        
+    }
+    .section .group-title .desc{
+        padding-right: 20px;
+        margin-bottom: 9px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: bold;
+        letter-spacing: -0.32px
+    }
+    .section .group-title .link-more{
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: -0.24px;
+        margin-left: 0;
+    }
+    .sc-content{padding: 0;}
+    .sc-content .swiper{
+        margin-top: 25px;
+        margin-bottom: 42px;}
+    .sc-content .text-box .title{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .sc-content.benefits .desc{
+        margin-top: 3px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .sc-content .people-slide .link-more{
+        display: none;
+    }
+    .sc-content .people-slide .img-box{
+        position: relative;
+        padding-bottom: 100%;
+    }
+    .sc-content .people-slide .img-box img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-fit: cover;
+    }
+    .sc-support{
+        padding: 71px 0 99px;
+
+    }
+    .sc-support h2{
+        font-size: 20px;
+        line-height: 34px
+    }
+     .sc-support .link-support{
+        font-size: 16px;
+     }
+}
